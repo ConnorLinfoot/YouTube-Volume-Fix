@@ -13,9 +13,6 @@ if( video_element.length == 1 ) {
 			return;
 		}
 		var volume = video.volume;
-		if( volume > 0.5 ) {
-			return;
-		}
 		we_updated_volume = true;
 		video.volume = volume * 2;
 	};
