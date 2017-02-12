@@ -13,12 +13,12 @@ if( video_element.length == 1 ) {
 			return;
 		}
 		var volume = video.volume;
+		var new_volume = volume * 2;
+		if( new_volume > 1 ) {
+			new_volume = 1;
+		}
 		we_updated_volume = true;
 		video.volume = volume * 2;
 	};
-
-	// setInterval(function() {
-	// 	console.log( 'Current volume ' + video.volume );
-	// }, 500);
 
 }
