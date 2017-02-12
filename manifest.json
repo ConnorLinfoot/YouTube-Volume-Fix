@@ -1,0 +1,21 @@
+{
+	"name": "YouTube Volume Fix",
+	"version": "1.0.0",
+	"minimum_chrome_version": "18",
+	"manifest_version": 2,
+	"description": "",
+	"icons": {
+		"16": "/images/icon16.png", 
+		"48": "/images/icon48.png", 
+		"128": "/images/icon128.png"
+	},
+	"permissions": ["tabs", "http://*/*", "https://*/*", "webRequest"],
+	   
+   "content_scripts": [{
+		"all_frames": false, 
+		"run_at": "document_end", 
+		"js": ["youtube-volume-fix.js"],
+		"matches": ["http://*/*", "https://*/*"]
+	}]
+   
+}
